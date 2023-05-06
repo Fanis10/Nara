@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Каталог</title>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+</head>
+
+
+<body>
+	<header class="header">
+    <div class="header__wrapp">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top__inner">
+                    <a href="" class="header-top__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header-top__connection">
+                        <div class="header-top__connection-group">
+                            <a href="tel:+7 (495) 776-79-51" class="header-top__tel">
+                                <i>
+                                    <img src="img/phone.png" alt="">
+                                </i>
+                                <span>+7 (495)<b>776-79-51</b></span>
+                            </a>
+                            <a class="header-top__email" href="mailto:plknara@mail.ru">
+                                <i>
+                                    <img src="img/email.png" alt="">
+                                </i>
+                                <span>plknara@mail.ru</span>
+                            </a>
+                        </div>
+                        <div class="header-top__hours">
+                            <i>
+                                <img src="img/clock.png" alt="">
+                            </i>
+                            <span>с 9:00 до 18:00 Пн.-Пт.</span>
+                        </div>
+                    </div>
+                    <a href="" class="header-top__btn btn btn-green">Обратный звонок</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom__inner">
+                    <ul class="header-bottom__list">
+                        <li class="header-bottom__link">
+                            <a href="">На главную</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <div class="header-bottom__item-show">
+                                <span>Каталог оборудования</span>
+                                <i>
+                                    <img src="img/right_arrow.png" alt="">
+                                </i>
+                            </div>
+                            <div class="header-bottom__item-hidden">
+                                <a class="header-bottom__item-link" href="">Оборудование 1</a>
+                                <a class="header-bottom__item-link" href="">Оборудование 2</a>
+                                <a class="header-bottom__item-link" href="">Оборудование 3</a>
+                                <a class="header-bottom__item-link" href="">Оборудование 4</a>
+                                <a class="header-bottom__item-link" href="">Оборудование 5</a>
+                                <a class="header-bottom__item-link" href="">Оборудование 6</a>
+                                <a class="header-bottom__item-link" href="">Оборудование 7</a>
+                            </div>
+                        </li>
+                        <li class="header-bottom__link">
+                            <a href="">О компании</a>
+                        </li>
+                        <li class="header-bottom__link">
+                            <a href="">Наши услуги</a>
+                        </li>
+                        <li class="header-bottom__link">
+                            <a href="">Оплата</a>
+                        </li>
+                        <li class="header-bottom__link">
+                            <a href="">Доставка</a>
+                        </li>
+                        <li class="header-bottom__link">
+                            <a href="">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-mob">
+        <div class="container">
+            <div class="header-mob__inner">
+                <div class="header-mob__top">
+                    <div class="header-mob__logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="header-mob__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="header-mob__bottom">
+                    <a href="tel:+7 (495) 776-79-51" class="header-mob__tel">
+                        <i>
+                            <img src="img/phone.png" alt="">
+                        </i>
+                        <span>+7 (495) <b>776-79-51</b></span>
+                    </a>
+                    <a class="header-mob__btn btn btn-green" href="">Обратный звонок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	<div class="content">
+		<aside class="sidebar">
+			<div class="sidebar__top">
+				<div class="sidebar__burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<a href="" class="sidebar__basket">
+				<div class="sidebar__basket-inner">
+					<span>10</span>
+					<img src="img/basket.png" alt="">
+				</div>
+			</a>
+			<div class="sidebar__socials">
+				<a class="sidebar__social" href="">
+					<img src="img/vk.png" alt="">
+				</a>
+				<a class="sidebar__social" href="">
+					<img src="img/telegram.png" alt="">
+				</a>
+				<a class="sidebar__social" href="">
+					<img src="img/ok.png" alt="">
+				</a>
+				<a class="sidebar__social" href="">
+					<img src="img/youtube.png" alt="">
+				</a>
+			</div>
+			<div class="sidebar__bottom">
+				<a class="sidebar__btn btn" href="">
+					<span>Бесплатная консультация</span>
+				</a>
+			</div>
+			<div class="sidebar__menu">
+				<div class="sidebar__menu-inner">
+					<div class="sidebar__connection">
+						<a href="tel:+7 (495) 776-79-51" class="sidebar__tel">
+							<i>
+								<img src="img/phone.png" alt="">
+							</i>
+							<span>+7 (495)<b>776-79-51</b></span>
+						</a>
+						<a class="sidebar__email" href="mailto:plknara@mail.ru">
+							<i>
+								<img src="img/email.png" alt="">
+							</i>
+							<span>plknara@mail.ru</span>
+						</a>
+						<div class="sidebar__hours">
+							<i>
+								<img src="img/clock.png" alt="">
+							</i>
+							<span>с 9:00 до 18:00 Пн.-Пт.</span>
+						</div>
+					</div>
+					<a class="sidebar__menu-btn btn btn-green" href="">Обратный звонок</a>
+					<ul class="sidebar__list">
+						<li class="sidebar__link">
+							<a href="">На главную</a>
+						</li>
+						<li class="sidebar__item">
+							<div class="sidebar__item-show">
+								<span>Каталог оборудования</span>
+								<i>
+									<img src="img/right_arrow.png" alt="">
+								</i>
+							</div>
+							<div class="sidebar__item-hidden">
+								<a class="sidebar__item-link" href="">Оборудование 1</a>
+								<a class="sidebar__item-link" href="">Оборудование 2</a>
+								<a class="sidebar__item-link" href="">Оборудование 3</a>
+								<a class="sidebar__item-link" href="">Оборудование 4</a>
+								<a class="sidebar__item-link" href="">Оборудование 5</a>
+								<a class="sidebar__item-link" href="">Оборудование 6</a>
+								<a class="sidebar__item-link" href="">Оборудование 7</a>
+							</div>
+						</li>
+						<li class="sidebar__link">
+							<a href="">О компании</a>
+						</li>
+						<li class="sidebar__link">
+							<a href="">Наши услуги</a>
+						</li>
+						<li class="sidebar__link">
+							<a href="">Оплата</a>
+						</li>
+						<li class="sidebar__link">
+							<a href="">Доставка</a>
+						</li>
+						<li class="sidebar__link">
+							<a href="">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</aside>
+		<section class="catalog-main">
+			<div class="breadcrumbs">
+				<div class="container">
+					<div class="breadcrumbs__items">
+						<a href="index.html" class="breadcrumbs__item">Главная</a>
+						<span class="breadcrumbs__item breadcrumbs__item--active">Каталог товаров</span>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="catalog-main__inner">
+					<h2 class="catalog-main__title-mob display2">
+						<span>Газораздаточные</span> колонки
+						<span>Газораздаточные колонки</span>
+					</h2>
+					<div class="catalog-main__left">
+						<div class="catalog-main__filter">
+							<div class="catalog-main__filter-show">
+								<div class="catalog-main__filter-title">Фильтры</div>
+								<div class="catalog-main__filter-btn">
+									<div class="catalog-main__filter-desc">
+										<span>Развернуть</span>
+										<span>Скрыть</span>
+									</div>
+									<div class="catalog-main__filter-icon">
+										<img src="img/arrow.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="catalog-main__filter-hidden">
+								<div class="catalog-main__item">
+									<div class="catalog-main__item-show">
+										<span>Рабочее давление</span>
+										<i>
+											<img src="img/arrow.png" alt="">
+										</i>
+									</div>
+									<div class="catalog-main__item-hidden">
+										<div class="catalog-main__item-check">
+											<input name="radio1" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>1,6</label>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-main__item">
+									<div class="catalog-main__item-show">
+										<span>Производительность</span>
+										<i>
+											<img src="img/arrow.png" alt="">
+										</i>
+									</div>
+									<div class="catalog-main__item-hidden">
+										<div class="catalog-main__item-check">
+											<input name="radio2" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>2*50л/мин</label>
+										</div>
+										<div class="catalog-main__item-check">
+											<input name="radio2" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>до 50 л/мин</label>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-main__item">
+									<div class="catalog-main__item-show">
+										<span>Тип гидравлики</span>
+										<i>
+											<img src="img/arrow.png" alt="">
+										</i>
+									</div>
+									<div class="catalog-main__item-hidden">
+										<div class="catalog-main__item-check">
+											<input name="radio3" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>Всасывающая</label>
+										</div>
+										<div class="catalog-main__item-check">
+											<input name="radio3" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>Напорная</label>
+										</div>
+										<div class="catalog-main__item-check">
+											<input name="radio3" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>УИЖГЭ-20 с ПЖ4-25</label>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-main__item">
+									<div class="catalog-main__item-show">
+										<span>Количество видов топлива</span>
+										<i>
+											<img src="img/arrow.png" alt="">
+										</i>
+									</div>
+									<div class="catalog-main__item-hidden hidden-flex">
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio4" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>1</label>
+										</div>
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio4" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>2</label>
+										</div>
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio4" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>3</label>
+										</div>
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio4" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>4</label>
+										</div>
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio4" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>5</label>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-main__item">
+									<div class="catalog-main__item-show">
+										<span>Номинальный расход через кран, л/мин</span>
+										<i>
+											<img src="img/arrow.png" alt="">
+										</i>
+									</div>
+									<div class="catalog-main__item-hidden">
+										<div class="catalog-main__item-check">
+											<input name="radio5" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>50</label>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-main__item">
+									<div class="catalog-main__item-show">
+										<span>Общее количество раздаточных рукавов</span>
+										<i>
+											<img src="img/arrow.png" alt="">
+										</i>
+									</div>
+									<div class="catalog-main__item-hidden hidden-flex">
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio6" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>1</label>
+										</div>
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio6" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>10</label>
+										</div>
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio6" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>2</label>
+										</div>
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio6" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>4</label>
+										</div>
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio6" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>6</label>
+										</div>
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio6" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>8</label>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-main__item">
+									<div class="catalog-main__item-show">
+										<span>Минимальный <br> расход, л/мин</span>
+										<i>
+											<img src="img/arrow.png" alt="">
+										</i>
+									</div>
+									<div class="catalog-main__item-hidden hidden-flex">
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio7" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>4.5</label>
+										</div>
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio7" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>5</label>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-main__item">
+									<div class="catalog-main__item-show">
+										<span>Номинальный <br> расход, л/мин</span>
+										<i>
+											<img src="img/arrow.png" alt="">
+										</i>
+									</div>
+									<div class="catalog-main__item-hidden hidden-flex">
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio8" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>50</label>
+										</div>
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio8" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>до 50</label>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-main__item">
+									<div class="catalog-main__item-show">
+										<span>Максимальный расход, л/мин</span>
+										<i>
+											<img src="img/arrow.png" alt="">
+										</i>
+									</div>
+									<div class="catalog-main__item-hidden hidden-flex">
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio9" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>4.5</label>
+										</div>
+										<div class="catalog-main__item-check catalog-main__item-check2">
+											<input name="radio9" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>45</label>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-main__item">
+									<div class="catalog-main__item-show">
+										<span>Производительность</span>
+										<i>
+											<img src="img/arrow.png" alt="">
+										</i>
+									</div>
+									<div class="catalog-main__item-hidden">
+										<div class="catalog-main__item-check">
+											<input name="radio10" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>1*50л/мин</label>
+										</div>
+										<div class="catalog-main__item-check">
+											<input name="radio10" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>2*50л/мин</label>
+										</div>
+										<div class="catalog-main__item-check">
+											<input name="radio10" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>до 50 л/мин</label>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-main__item">
+									<div class="catalog-main__item-show">
+										<span>Рабочее напряжение</span>
+										<i>
+											<img src="img/arrow.png" alt="">
+										</i>
+									</div>
+									<div class="catalog-main__item-hidden">
+										<div class="catalog-main__item-check">
+											<input name="radio11" type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+											<label>220</label>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-main__item">
+									<div class="catalog-main__item-btns">
+										<a class="catalog-main__item-btn btn btn-green" href="">Показать</a>
+										<a class="catalog-main__item-btn2 btn" href="">Сбросить</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-main__right">
+						<h2 class="catalog-main__title display2">
+							<span>Газораздаточные</span> колонки
+							<span>Газораздаточные колонки</span>
+						</h2>
+						<div class="catalog-main__cards">
+							<a href="" class="catalog__card">
+								<div class="catalog__card-img">
+									<img src="img/catalog.webp" alt="">
+								</div>
+								<div class="catalog__card-desc">
+									<div class="catalog__card-title">Топливораздаточные колонки</div>
+									<div class="catalog__card-subtitle">КВАНТ 101 – 11-11 С ОДНОСТРОЧНОЙ ИНДИКАЦИЕЙ</div>
+									<div class="catalog__card-price">
+										136 200.00 <span>руб.</span>
+									</div>
+									<button class="catalog__card-btn btn-green" href="">
+										В корзину
+										<span>
+													<img src="img/basket2.png" alt="">
+												</span>
+									</button>
+								</div>
+							</a>
+							<a href="" class="catalog__card">
+								<div class="catalog__card-img">
+									<img src="img/catalog.webp" alt="">
+								</div>
+								<div class="catalog__card-desc">
+									<div class="catalog__card-title">Топливораздаточные колонки</div>
+									<div class="catalog__card-subtitle">КВАНТ 101 – 11-11 С ОДНОСТРОЧНОЙ ИНДИКАЦИЕЙ</div>
+									<div class="catalog__card-price">
+										136 200.00 <span>руб.</span>
+									</div>
+									<button class="catalog__card-btn btn-green" href="">
+										В корзину
+										<span>
+													<img src="img/basket2.png" alt="">
+												</span>
+									</button>
+								</div>
+							</a>
+							<a href="" class="catalog__card">
+								<div class="catalog__card-img">
+									<img src="img/catalog.webp" alt="">
+								</div>
+								<div class="catalog__card-desc">
+									<div class="catalog__card-title">Топливораздаточные колонки</div>
+									<div class="catalog__card-subtitle">КВАНТ 101 – 11-11 С ОДНОСТРОЧНОЙ ИНДИКАЦИЕЙ</div>
+									<div class="catalog__card-price">
+										136 200.00 <span>руб.</span>
+									</div>
+									<button class="catalog__card-btn btn-green" href="">
+										В корзину
+										<span>
+													<img src="img/basket2.png" alt="">
+												</span>
+									</button>
+								</div>
+							</a>
+							<a href="" class="catalog__card">
+								<div class="catalog__card-img">
+									<img src="img/catalog.webp" alt="">
+								</div>
+								<div class="catalog__card-desc">
+									<div class="catalog__card-title">Топливораздаточные колонки</div>
+									<div class="catalog__card-subtitle">КВАНТ 101 – 11-11 С ОДНОСТРОЧНОЙ ИНДИКАЦИЕЙ</div>
+									<div class="catalog__card-price">
+										136 200.00 <span>руб.</span>
+									</div>
+									<button class="catalog__card-btn btn-green" href="">
+										В корзину
+										<span>
+													<img src="img/basket2.png" alt="">
+												</span>
+									</button>
+								</div>
+							</a>
+							<a href="" class="catalog__card">
+								<div class="catalog__card-img">
+									<img src="img/catalog.webp" alt="">
+								</div>
+								<div class="catalog__card-desc">
+									<div class="catalog__card-title">Топливораздаточные колонки</div>
+									<div class="catalog__card-subtitle">КВАНТ 101 – 11-11 С ОДНОСТРОЧНОЙ ИНДИКАЦИЕЙ</div>
+									<div class="catalog__card-price">
+										136 200.00 <span>руб.</span>
+									</div>
+									<button class="catalog__card-btn btn-green" href="">
+										В корзину
+										<span>
+													<img src="img/basket2.png" alt="">
+												</span>
+									</button>
+								</div>
+							</a>
+							<a href="" class="catalog__card">
+								<div class="catalog__card-img">
+									<img src="img/catalog.webp" alt="">
+								</div>
+								<div class="catalog__card-desc">
+									<div class="catalog__card-title">Топливораздаточные колонки</div>
+									<div class="catalog__card-subtitle">КВАНТ 101 – 11-11 С ОДНОСТРОЧНОЙ ИНДИКАЦИЕЙ</div>
+									<div class="catalog__card-price">
+										136 200.00 <span>руб.</span>
+									</div>
+									<button class="catalog__card-btn btn-green" href="">
+										В корзину
+										<span>
+													<img src="img/basket2.png" alt="">
+												</span>
+									</button>
+								</div>
+							</a>
+							<a href="" class="catalog__card">
+								<div class="catalog__card-img">
+									<img src="img/catalog.webp" alt="">
+								</div>
+								<div class="catalog__card-desc">
+									<div class="catalog__card-title">Топливораздаточные колонки</div>
+									<div class="catalog__card-subtitle">КВАНТ 101 – 11-11 С ОДНОСТРОЧНОЙ ИНДИКАЦИЕЙ</div>
+									<div class="catalog__card-price">
+										136 200.00 <span>руб.</span>
+									</div>
+									<button class="catalog__card-btn btn-green" href="">
+										В корзину
+										<span>
+													<img src="img/basket2.png" alt="">
+												</span>
+									</button>
+								</div>
+							</a>
+							<a href="" class="catalog__card">
+								<div class="catalog__card-img">
+									<img src="img/catalog.webp" alt="">
+								</div>
+								<div class="catalog__card-desc">
+									<div class="catalog__card-title">Топливораздаточные колонки</div>
+									<div class="catalog__card-subtitle">КВАНТ 101 – 11-11 С ОДНОСТРОЧНОЙ ИНДИКАЦИЕЙ</div>
+									<div class="catalog__card-price">
+										136 200.00 <span>руб.</span>
+									</div>
+									<button class="catalog__card-btn btn-green" href="">
+										В корзину
+										<span>
+													<img src="img/basket2.png" alt="">
+												</span>
+									</button>
+								</div>
+							</a>
+							<a href="" class="catalog__card">
+								<div class="catalog__card-img">
+									<img src="img/catalog.webp" alt="">
+								</div>
+								<div class="catalog__card-desc">
+									<div class="catalog__card-title">Топливораздаточные колонки</div>
+									<div class="catalog__card-subtitle">КВАНТ 101 – 11-11 С ОДНОСТРОЧНОЙ ИНДИКАЦИЕЙ</div>
+									<div class="catalog__card-price">
+										136 200.00 <span>руб.</span>
+									</div>
+									<button class="catalog__card-btn btn-green" href="">
+										В корзину
+										<span>
+													<img src="img/basket2.png" alt="">
+												</span>
+									</button>
+								</div>
+							</a>
+							<a href="" class="catalog__card">
+								<div class="catalog__card-img">
+									<img src="img/catalog.webp" alt="">
+								</div>
+								<div class="catalog__card-desc">
+									<div class="catalog__card-title">Топливораздаточные колонки</div>
+									<div class="catalog__card-subtitle">КВАНТ 101 – 11-11 С ОДНОСТРОЧНОЙ ИНДИКАЦИЕЙ</div>
+									<div class="catalog__card-price">
+										136 200.00 <span>руб.</span>
+									</div>
+									<button class="catalog__card-btn btn-green" href="">
+										В корзину
+										<span>
+													<img src="img/basket2.png" alt="">
+												</span>
+									</button>
+								</div>
+							</a>
+							<a href="" class="catalog__card">
+								<div class="catalog__card-img">
+									<img src="img/catalog.webp" alt="">
+								</div>
+								<div class="catalog__card-desc">
+									<div class="catalog__card-title">Топливораздаточные колонки</div>
+									<div class="catalog__card-subtitle">КВАНТ 101 – 11-11 С ОДНОСТРОЧНОЙ ИНДИКАЦИЕЙ</div>
+									<div class="catalog__card-price">
+										136 200.00 <span>руб.</span>
+									</div>
+									<button class="catalog__card-btn btn-green" href="">
+										В корзину
+										<span>
+													<img src="img/basket2.png" alt="">
+												</span>
+									</button>
+								</div>
+							</a>
+							<a href="" class="catalog__card">
+								<div class="catalog__card-img">
+									<img src="img/catalog.webp" alt="">
+								</div>
+								<div class="catalog__card-desc">
+									<div class="catalog__card-title">Топливораздаточные колонки</div>
+									<div class="catalog__card-subtitle">КВАНТ 101 – 11-11 С ОДНОСТРОЧНОЙ ИНДИКАЦИЕЙ</div>
+									<div class="catalog__card-price">
+										136 200.00 <span>руб.</span>
+									</div>
+									<button class="catalog__card-btn btn-green" href="">
+										В корзину
+										<span>
+													<img src="img/basket2.png" alt="">
+												</span>
+									</button>
+								</div>
+							</a>
+							<a href="" class="catalog__card">
+								<div class="catalog__card-img">
+									<img src="img/catalog.webp" alt="">
+								</div>
+								<div class="catalog__card-desc">
+									<div class="catalog__card-title">Топливораздаточные колонки</div>
+									<div class="catalog__card-subtitle">КВАНТ 101 – 11-11 С ОДНОСТРОЧНОЙ ИНДИКАЦИЕЙ</div>
+									<div class="catalog__card-price">
+										136 200.00 <span>руб.</span>
+									</div>
+									<button class="catalog__card-btn btn-green" href="">
+										В корзину
+										<span>
+													<img src="img/basket2.png" alt="">
+												</span>
+									</button>
+								</div>
+							</a>
+							<a href="" class="catalog__card">
+								<div class="catalog__card-img">
+									<img src="img/catalog.webp" alt="">
+								</div>
+								<div class="catalog__card-desc">
+									<div class="catalog__card-title">Топливораздаточные колонки</div>
+									<div class="catalog__card-subtitle">КВАНТ 101 – 11-11 С ОДНОСТРОЧНОЙ ИНДИКАЦИЕЙ</div>
+									<div class="catalog__card-price">
+										136 200.00 <span>руб.</span>
+									</div>
+									<button class="catalog__card-btn btn-green" href="">
+										В корзину
+										<span>
+													<img src="img/basket2.png" alt="">
+												</span>
+									</button>
+								</div>
+							</a>
+							<a href="" class="catalog__card">
+								<div class="catalog__card-img">
+									<img src="img/catalog.webp" alt="">
+								</div>
+								<div class="catalog__card-desc">
+									<div class="catalog__card-title">Топливораздаточные колонки</div>
+									<div class="catalog__card-subtitle">КВАНТ 101 – 11-11 С ОДНОСТРОЧНОЙ ИНДИКАЦИЕЙ</div>
+									<div class="catalog__card-price">
+										136 200.00 <span>руб.</span>
+									</div>
+									<button class="catalog__card-btn btn-green" href="">
+										В корзину
+										<span>
+													<img src="img/basket2.png" alt="">
+												</span>
+									</button>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-main__pagination pagination">
+							<a href="" class="pagination__btn pagination__btn--prev">
+								<img src="img/slide_arrow.png" alt="">
+							</a>
+							<a href="" class="pagination__item pagination__item--active">
+								<span>1</span>
+							</a>
+							<a href="" class="pagination__item">
+								<span>2</span>
+							</a>
+							<a href="" class="pagination__item">
+								<span>3</span>
+							</a>
+							<a href="" class="pagination__btn pagination__btn--next">
+								<img src="img/slide_arrow.png" alt="">
+							</a>
+						</div>
+						<a class="catalog-main__btn btn" href="">Показать еще</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="catalog-about">
+			<div class="container">
+				<div class="catalog-about__inner">
+					<h2 class="catalog-about__title display2">
+						<span>О</span> компании
+						<span>О компании</span>
+					</h2>
+					<div class="catalog-about__subtitle">Ремонт насосов и другого насосного оборудования</div>
+					<div class="catalog-about__desc">
+						<p>
+							Наша компания предоставляет услуги по диагностике, дефектации, техническому обслуживанию и ремонту насосов СЦН, СВН, СЦЛ. Ремонт насосов представляет собой сложный процесс, в ходе которого выявляется и устраняется неисправность механизма.
+						</p>
+						<p>
+							В ремонт не принимаются счетчики с лопнутым или имеющие трещины корпусом. Не ремонтируются счетчики имеющие механические повреждения овальные шестерни. В процессе ремонта производится регулировка, проливка счетчика, при необходимости производится замена счетного устройства.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="up">
+		<img src="img/up_arrow.png" alt="">
+	</div>
+
+	<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__items">
+                <div class="footer__item footer__item--100">
+                    <a class="footer__logo" href="">
+                        <img src="img/logo2.png" alt="">
+                    </a>
+                    <div class="footer__info">
+                        <div class="footer__rights">2023 © Copyright. «ПЛК НАРА» <br> <span>Все права защищены.</span></div>
+                        <div class="footer__brevis">
+                            <div class="footer__brevis-img">
+                                <img src="img/brevis.png" alt="">
+                            </div>
+                            <div class="footer__brevis-desc">
+                                Создание сайта -
+                                <a href="">интернет агентство “BREVIS”</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">Навигация</div>
+                    <ul class="footer__list">
+                        <li><a href="">На главную</a></li>
+                        <li><a href="">Каталог оборудования</a></li>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Наши услуги</a></li>
+                        <li><a href="">Оплата</a></li>
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">Каталог</div>
+                    <ul class="footer__list">
+                        <li><a href="">Мотопомпы</a></li>
+                        <li><a href="">Контейнерные АЗС</a></li>
+                        <li><a href="">Запорная арматура</a></li>
+                        <li><a href="">Топливораздаточные колонки</a></li>
+                        <li><a href="">Комлектующие для ТРК</a></li>
+                        <li><a href="">Заправочные модули</a></li>
+                        <li><a href="">Газораздаточное оборудование</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item footer__item--100">
+                    <div class="footer__item-title">Информация</div>
+                    <ul class="footer__list">
+                        <li><a href="">Техническая поддержка</a></li>
+                        <li><a href="">Возврат и гарантия на товары</a></li>
+                        <li><a href="">Опросные листы</a></li>
+                        <li><a href="">Видео</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+	<script type="text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map("map", {
+            center: [55.372815, 36.716868],
+            zoom: 15
+        });
+
+        var myPlacemark = new ymaps.Placemark([55.372815, 36.716868], null, {
+            iconLayout: 'default#image',
+            iconImageHref: "img/map-icon.svg",
+            iconImageSize: [45, 60],
+            // iconImageOffset: [-15, -44]
+        });
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable('scrollZoom');
+
+    }
+</script>
+</body>
+
+</html>

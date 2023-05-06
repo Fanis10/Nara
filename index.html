@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Главная</title>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
 </head>
 
 
@@ -1170,13 +1171,162 @@
 				</div>
 			</div>
 		</section>
+		<section class="contacts">
+			<div class="container">
+				<div class="contacts__inner">
+					<div class="contacts__left">
+						<h2 class="contacts__title display2">
+							<span>Контакты</span>
+							<span>Контакты</span>
+						</h2>
+						<div class="contacts__connection">
+							<a href="" class="contacts__address">
+								<div class="contacts__address-icon">
+									<img src="img/address.png" alt="">
+								</div>
+								<div class="contacts__address-desc">
+									<div class="contacts__address-title">АДРЕС</div>
+									<div class="contacts__address-text">143300,Московская <br> Область,Наро-Фоминск <br> Тургеневский Тупик 1, Офис 3021</div>
+								</div>
+							</a>
+							<a href="tel:+7 (495) 776-79-51" class="contacts__tel">
+								<div class="contacts__tel-icon">
+									<img src="img/phone2.png" alt="">
+								</div>
+								<div class="contacts__tel-desc">
+									<div class="contacts__tel-title">Телефон</div>
+									<div class="contacts__tel-text">+7 (495) 776-79-51</div>
+								</div>
+							</a>
+							<a href="mailto:plknara@mail.ru" class="contacts__email">
+								<div class="contacts__email-icon">
+									<img src="img/email2.png" alt="">
+								</div>
+								<div class="contacts__email-desc">
+									<div class="contacts__email-title">Почта</div>
+									<div class="contacts__email-text">plknara@mail.ru</div>
+								</div>
+							</a>
+							<div class="contacts__cloc">
+								<div class="contacts__cloc-icon">
+									<img src="img/clock2.png" alt="">
+								</div>
+								<div class="contacts__cloc-desc">
+									<div class="contacts__cloc-title">Время работы:</div>
+									<div class="contacts__cloc-text">с 9:00 до 18:00 Пн.-Пт.</div>
+								</div>
+							</div>
+							<div class="contacts__socials">
+								<a href="" class="contacts__social">
+									<img src="img/vk.png" alt="">
+								</a>
+								<a href="" class="contacts__social">
+									<img src="img/youtube.png" alt="">
+								</a>
+								<a href="" class="contacts__social">
+									<img src="img/ok.png" alt="">
+								</a>
+								<a href="" class="contacts__social">
+									<img src="img/telegram.png" alt="">
+								</a>
+							</div>
+						</div>
+						<a class="contacts__btn btn" href="">Бесплатная консультация</a>
+					</div>
+					<div class="contacts__right">
+						<div id="map" class="map"></div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 
-	<footer class="footer"></footer>
+	<div class="up">
+		<img src="img/up_arrow.png" alt="">
+	</div>
+
+	<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__items">
+                <div class="footer__item footer__item--100">
+                    <a class="footer__logo" href="">
+                        <img src="img/logo2.png" alt="">
+                    </a>
+                    <div class="footer__info">
+                        <div class="footer__rights">2023 © Copyright. «ПЛК НАРА» <br> <span>Все права защищены.</span></div>
+                        <div class="footer__brevis">
+                            <div class="footer__brevis-img">
+                                <img src="img/brevis.png" alt="">
+                            </div>
+                            <div class="footer__brevis-desc">
+                                Создание сайта -
+                                <a href="">интернет агентство “BREVIS”</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">Навигация</div>
+                    <ul class="footer__list">
+                        <li><a href="">На главную</a></li>
+                        <li><a href="">Каталог оборудования</a></li>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Наши услуги</a></li>
+                        <li><a href="">Оплата</a></li>
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">Каталог</div>
+                    <ul class="footer__list">
+                        <li><a href="">Мотопомпы</a></li>
+                        <li><a href="">Контейнерные АЗС</a></li>
+                        <li><a href="">Запорная арматура</a></li>
+                        <li><a href="">Топливораздаточные колонки</a></li>
+                        <li><a href="">Комлектующие для ТРК</a></li>
+                        <li><a href="">Заправочные модули</a></li>
+                        <li><a href="">Газораздаточное оборудование</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item footer__item--100">
+                    <div class="footer__item-title">Информация</div>
+                    <ul class="footer__list">
+                        <li><a href="">Техническая поддержка</a></li>
+                        <li><a href="">Возврат и гарантия на товары</a></li>
+                        <li><a href="">Опросные листы</a></li>
+                        <li><a href="">Видео</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 
+	<script type="text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map("map", {
+            center: [55.372815, 36.716868],
+            zoom: 15
+        });
+
+        var myPlacemark = new ymaps.Placemark([55.372815, 36.716868], null, {
+            iconLayout: 'default#image',
+            iconImageHref: "img/map-icon.svg",
+            iconImageSize: [45, 60],
+            // iconImageOffset: [-15, -44]
+        });
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable('scrollZoom');
+
+    }
+</script>
 </body>
 
 </html>
