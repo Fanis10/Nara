@@ -20,7 +20,36 @@
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="catalog.html">Каталог</a></li>
 				<li><a href="equipment.html">Оборудование</a></li>
+				<li>
+					<button class="modal-btn btn-green" data-modal="contactModal">Модальное окно</button>
+				</li>
 			</ul>
+
+			<div class="modal" id="contactModal">
+				<div class="modal__dialog">
+					<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+						<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13 1L1 13M1 1L13 13" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<div class="modal__content">
+						<h3 class="modal-title">Заголовок</h3>
+						<form class="modal-form">
+							<fieldset class="modal-form__group">
+								<span>Ваше имя</span>
+								<input type="text" placeholder="">
+							</fieldset>
+							<fieldset class="modal-form__group">
+								<span>Телефон</span>
+								<input type="tel" placeholder="">
+							</fieldset>
+							<fieldset class="modal-form__group">
+								<button class="modal-form__btn btn-green">Отправить</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
